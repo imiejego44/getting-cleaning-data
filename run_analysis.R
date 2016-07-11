@@ -30,17 +30,17 @@ names2 <- c('X_train', 'y_train','subject_train')
 
 ###Load all files
 for(i in names0){
-  filepath <- file.path("/Users/ac/Desktop/UZER/kursera/datasajensspec/gettingdata/projekt/",paste(i,".txt",sep=""))
+  filepath <- file.path(".",paste(i,".txt",sep=""))
   assign(i, read.table(filepath, sep = "",colClasses=c("integer", "character")))
 }
 
 for(i in names1){
-  filepath <- file.path("/Users/ac/Desktop/UZER/kursera/datasajensspec/gettingdata/projekt/test",paste(i,".txt",sep=""))
+  filepath <- file.path("./test",paste(i,".txt",sep=""))
   assign(i, read.table(filepath,header = FALSE, fill = TRUE, sep = ""))
 }
 
 for(i in names2){
-  filepath <- file.path("/Users/ac/Desktop/UZER/kursera/datasajensspec/gettingdata/projekt/train",paste(i,".txt",sep=""))
+  filepath <- file.path("./train",paste(i,".txt",sep=""))
   assign(i, read.table(filepath,header = FALSE, fill = TRUE, sep = ""))
 }
 
@@ -103,6 +103,6 @@ colnames(pre_tidy_set2) <- c("Activity","Subject Performing",features[mean_std_i
 # Final tidy product
 tidy_set_averages <- pre_tidy_set2
 
-# Write table - export
 write.table(tidy_set_averages,file="tidy.txt",row.name=FALSE )
+
 
