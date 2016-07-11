@@ -17,7 +17,7 @@
 
 ## Set working directory
 
-setwd("/Users/ac/Desktop/UZER/kursera/datasajensspec/gettingdata/projekt/")
+# setwd("/Users/ac/Desktop/UZER/kursera/datasajensspec/gettingdata/projekt/")
 
 #####
 ##Read files##
