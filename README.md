@@ -14,7 +14,8 @@ The `CodeBook.md` explains it more detailed, with the .
 ## Run
 
 1. Download the data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-2. Change directory (swd) for the folder with the downloaded data
-2. Run the script:
+2.  (data collected from the accelerometers from the Samsung Galaxy S smartphone),
+3. Change directory (swd) for the folder with the downloaded data.
+4. Run the script:
 
        $ Rscript run_analysis.R
