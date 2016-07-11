@@ -103,5 +103,6 @@ colnames(pre_tidy_set2) <- c("Activity","Subject Performing",features[mean_std_i
 # Final tidy product
 tidy_set_averages <- pre_tidy_set2
 
-
+# Write table - export
+write.table(tidy_set_averages,file="tidy.txt",row.name=FALSE )
 
