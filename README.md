@@ -19,3 +19,4 @@ The `CodeBook.md` explains it more detailed, with the .
 4. Run the script:
 
        $ Rscript run_analysis.R
+5. It creates a file "tidy.txt"
